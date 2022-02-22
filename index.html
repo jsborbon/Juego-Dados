@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Js/Script.js"></script>
+    <link rel="stylesheet" href="Css/Styles.css">
+    <title>DADOS</title>
+</head>
+<body onload="inicializar()">
+<header>
+    <h1>ACTIVIDAD DE DADOS</h1>
+    <hr>
+</header>
+<main>
+    <label>Indique el número de tiradas máximas</label>
+    <input type="number" name="lanzadas" min="1" value="1">
+    <button onclick="empezarNuevoJuego();">Empezar</button>
+</main>
+<section>
+    <div class="dado">
+        <img src="./imgs/dice 5.png" title="dado1" id="dado1">
+        <img src="./imgs/dice 6.png" title="dado2" id="dado2">
+        <br>
+        <input type="button" name="lanzar" value="Lanzar Dado" onclick="lanzarDados()">
+    </div>
+    <div class="resultadoDados">
+        <h2 id="resultado">Jugada: 0</h2>
+        <h2 id="lanzamiento">Tirada: 0</h2>
+        <h2 id="jugadasRestantes">Jugadas restantes: 1</h2>
+    </div>
+</section>
+<section>
+    <div class="premios">
+        <h1>Premios</h1>
+        <h2 id="premio1"></h2>
+        <h2 id="premio2"></h2>
+    </div>
+</section>
+</body>
+</html>

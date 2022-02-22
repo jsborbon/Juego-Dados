@@ -1,0 +1,17 @@
+img {
+    width: 35%;
+    margin: 14px;
+}
+
+section {
+    float: left;
+}
+
+input[type=button] {
+    background-color: wheat;
+    text-align: center;
+    width: 80%;
+}
+.premios h1{
+    text-align: center;
+}
